@@ -27,18 +27,9 @@ export const FlipCard: React.FC<FlipCardProps> = ({ project }) => {
       className="flip-card transform transition-transform duration-300 hover:scale-105"
       style={{ minHeight: 260 }}
     >
-      <div
-        className={`flip-inner ${isFlipped ? "flipped" : ""}`}
-        style={{ minHeight: 260 }}
-      >
+      <div className={`flip-inner ${isFlipped ? "flipped" : ""}`} style={{ minHeight: 260 }}>
         {/* Front Side */}
-        <div
-          className="flip-front flex flex-col items-center justify-center rounded-lg shadow-lg p-4 backdrop-blur-md bg-white/10 border-white/30 border"
-          style={{
-            // Optional: Add a light background color if needed
-            // backgroundImage: `linear-gradient(to bottom right, #e0e7ff, #c7d2fe)`,
-          }}
-        >
+        <div className="flip-front flex flex-col items-center justify-center rounded-lg shadow-lg p-4 backdrop-blur-md bg-white/10 border border-white/30">
           <img
             src={project.imageUrl}
             alt={project.title}
@@ -46,18 +37,23 @@ export const FlipCard: React.FC<FlipCardProps> = ({ project }) => {
             draggable={false}
           />
           <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-          <Button onClick={handleFlip} className="mt-2" variant="outline">
+          <button
+            onClick={handleFlip}
+            className="
+              mt-2 px-4 py-2 rounded-md
+              bg-white/70 text-black
+              hover:bg-white/90 hover:text-black
+              transition-colors duration-300
+              font-medium shadow
+              border border-white/40
+            "
+            type="button"
+          >
             Details
-          </Button>
+          </button>
         </div>
         {/* Back Side */}
-        <div
-          className="flip-back flex flex-col items-center justify-center rounded-lg shadow-lg p-4 backdrop-blur-md bg-white/10 border-white/30 border"
-          style={{
-            // Optional: Add a light background color if needed
-            // backgroundImage: `linear-gradient(to bottom right, #e0e7ff, #c7d2fe)`,
-          }}
-        >
+        <div className="flip-back flex flex-col items-center justify-center rounded-lg shadow-lg p-4 backdrop-blur-md bg-white/10 border border-white/30">
           <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
           <p className="text-sm mb-2">{project.description}</p>
           <p className="text-xs mb-4 opacity-80">{project.techStack}</p>
@@ -69,9 +65,20 @@ export const FlipCard: React.FC<FlipCardProps> = ({ project }) => {
           >
             View on GitHub
           </a>
-          <Button onClick={handleFlip} className="mt-2" variant="secondary">
+          <button
+            onClick={handleFlip}
+            className="
+              mt-2 px-4 py-2 rounded-md
+              bg-white/70 text-black
+              hover:bg-white/90 hover:text-black
+              transition-colors duration-300
+              font-medium shadow
+              border border-white/40
+            "
+            type="button"
+          >
             Back
-          </Button>
+          </button>
         </div>
       </div>
     </div>
