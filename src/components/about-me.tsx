@@ -11,14 +11,20 @@ export function AboutMe() {
           <AvatarImage src="https://picsum.photos/400/400" alt="Your Name" />
           <AvatarFallback>Name</AvatarFallback>
         </Avatar>
-        <div>
-          <p className="text-muted-foreground mb-4">
-            A brief introduction about yourself. This could include your
-            background, what you're passionate about, and your goals.
+        <div className="text-muted-foreground">
+          <p className="mb-4">
+            I am Som Takalkar, a Final Year Electronics and Computer Engineering
+            student at Maharashtra Institute of Technology.
+            I have a strong interest in Cybersecurity, Computer Networks, and
+            exploring new global trends.
           </p>
-          <p className="text-muted-foreground">
-            Feel free to add more details about your experience and expertise.
+          <p className="mb-4">
+            My technical skills include HTML, CSS, JavaScript, Python, SQL, and
+            C. I've also earned certifications from Google-Coursera, HackerRank,
+            and IBM-Coursera.
           </p>
+          <p>I thrive in team environments and am passionate about continual learning.</p>
+
         </div>
       </CardContent>
     </Card>
