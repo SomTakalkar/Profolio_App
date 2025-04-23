@@ -8,73 +8,73 @@ body {
 
 @layer base {
   :root {
-    --background: 217 65% 12%;
+    --background: 10 25% 10%; /* Dark blue (#0A192F) */
     --foreground: 0 0% 98%;
-    --card: 217 65% 12%;
+    --card: 10 25% 10%; /* Dark blue (#0A192F) */
     --card-foreground: 0 0% 98%;
-    --popover: 217 65% 12%;
+    --popover: 10 25% 10%; /* Dark blue (#0A192F) */
     --popover-foreground: 0 0% 98%;
-    --primary: 165 100% 59%;
-    --primary-foreground: 217 65% 12%;
-    --secondary: 217 65% 12%;
+    --primary: 165 100% 59%; /* Teal (#64FFDA) */
+    --primary-foreground: 10 25% 10%; /* Dark blue (#0A192F) */
+    --secondary: 10 25% 10%; /* Dark blue (#0A192F) */
     --secondary-foreground: 0 0% 98%;
-    --muted: 217 65% 12%;
+    --muted: 10 25% 10%; /* Dark blue (#0A192F) */
     --muted-foreground: 0 0% 63.9%;
-    --accent: 271 76% 73%;
+    --accent: 271 76% 73%; /* Purple (#BB86FC) */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 217 65% 12%;
-    --input: 217 65% 12%;
-    --ring: 165 100% 59%;
+    --border: 10 25% 10%; /* Dark blue (#0A192F) */
+    --input: 10 25% 10%; /* Dark blue (#0A192F) */
+    --ring: 165 100% 59%; /* Teal (#64FFDA) */
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
     --radius: 0.5rem;
-    --sidebar-background: 217 65% 12%;
+    --sidebar-background: 10 25% 10%; /* Dark blue (#0A192F) */
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 165 100% 59%;
-    --sidebar-primary-foreground: 217 65% 12%;
-    --sidebar-accent: 271 76% 73%;
+    --sidebar-primary: 165 100% 59%; /* Teal (#64FFDA) */
+    --sidebar-primary-foreground: 10 25% 10%; /* Dark blue (#0A192F) */
+    --sidebar-accent: 271 76% 73%; /* Purple (#BB86FC) */
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 217 65% 12%;
-    --sidebar-ring: 165 100% 59%;
+    --sidebar-border: 10 25% 10%; /* Dark blue (#0A192F) */
+    --sidebar-ring: 165 100% 59%; /* Teal (#64FFDA) */
   }
   .dark {
-    --background: 217 65% 12%;
+    --background: 10 25% 10%; /* Dark blue (#0A192F) */
     --foreground: 0 0% 98%;
-    --card: 217 65% 12%;
+    --card: 10 25% 10%; /* Dark blue (#0A192F) */
     --card-foreground: 0 0% 98%;
-    --popover: 217 65% 12%;
+    --popover: 10 25% 10%; /* Dark blue (#0A192F) */
     --popover-foreground: 0 0% 98%;
-    --primary: 165 100% 59%;
-    --primary-foreground: 217 65% 12%;
-    --secondary: 217 65% 12%;
+    --primary: 165 100% 59%; /* Teal (#64FFDA) */
+    --primary-foreground: 10 25% 10%; /* Dark blue (#0A192F) */
+    --secondary: 10 25% 10%; /* Dark blue (#0A192F) */
     --secondary-foreground: 0 0% 98%;
-    --muted: 217 65% 12%;
+    --muted: 10 25% 10%; /* Dark blue (#0A192F) */
     --muted-foreground: 0 0% 63.9%;
-    --accent: 271 76% 73%;
+    --accent: 271 76% 73%; /* Purple (#BB86FC) */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 217 65% 12%;
-    --input: 217 65% 12%;
-    --ring: 165 100% 59%;
+    --border: 10 25% 10%; /* Dark blue (#0A192F) */
+    --input: 10 25% 10%; /* Dark blue (#0A192F) */
+    --ring: 165 100% 59%; /* Teal (#64FFDA) */
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 217 65% 12%;
+    --sidebar-background: 10 25% 10%; /* Dark blue (#0A192F) */
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 165 100% 59%;
-    --sidebar-primary-foreground: 217 65% 12%;
-    --sidebar-accent: 271 76% 73%;
+    --sidebar-primary: 165 100% 59%; /* Teal (#64FFDA) */
+    --sidebar-primary-foreground: 10 25% 10%; /* Dark blue (#0A192F) */
+    --sidebar-accent: 271 76% 73%; /* Purple (#BB86FC) */
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 217 65% 12%;
-    --sidebar-ring: 165 100% 59%;
+    --sidebar-border: 10 25% 10%; /* Dark blue (#0A192F) */
+    --sidebar-ring: 165 100% 59%; /* Teal (#64FFDA) */
   }
 }
 
@@ -86,4 +86,5 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
 

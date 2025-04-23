@@ -3,6 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import anime from 'animejs';
 
 const placeholderProjects = [
   {
@@ -30,14 +31,25 @@ const placeholderProjects = [
 
 export function ProjectShowcase() {
   const [projects, setProjects] = useState(placeholderProjects);
+
   useEffect(() => {
-    // Replace placeholderProjects with data fetching logic
+    // Wrap the animation code in useEffect to ensure it runs on the client-side
+    anime({
+      targets: '.project-card',
+      translateY: [100, 0],
+      opacity: [0, 1],
+      delay: anime.stagger(200, { start: 200 }),
+      duration: 800,
+      easing: 'easeOutQuad'
+    });
+
     setProjects(placeholderProjects);
   }, []);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {projects.map((project) => (
-        <Card key={project.id}>
+        <Card key={project.id} className="project-card">
           <CardHeader>
             <CardTitle>{project.title}</CardTitle>
           </CardHeader>

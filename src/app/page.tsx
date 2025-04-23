@@ -2,10 +2,16 @@
 
 import { ProjectShowcase } from "@/components/project-showcase";
 import { SkillsExperience } from "@/components/skills-experience";
+import { AboutMe } from "@/components/about-me";
 
 export default function Home() {
   return (
     <div className="container mx-auto py-10">
+      <section id="about" className="mb-12">
+        <h2 className="text-3xl font-semibold mb-6">About Me</h2>
+        <AboutMe />
+      </section>
+
       <section id="projects" className="mb-12">
         <h2 className="text-3xl font-semibold mb-6">Projects</h2>
         <ProjectShowcase />
@@ -18,3 +24,4 @@ export default function Home() {
     </div>
   );
 }
+
